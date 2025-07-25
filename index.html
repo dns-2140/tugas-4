@@ -62,14 +62,9 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-1 order-2">
-            <h1 class="mb-4">Selamat datang di website saya</h1>
-            <p class="mb-4">
-              Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks
-              seperti ini.
-            </p>
-            <a href="#portfolio" class="btn btn-custom btn-lg"
-              >Pelajari lebih lanjut</a
-            >
+            <h1 class="mb-4">Hello, I am David.</h1>
+            <p class="mb-4">I am an aspiring full-stack software engineer.</p>
+            <a href="#portfolio" class="btn btn-custom btn-lg">Learn more</a>
           </div>
           <div class="col-lg-6 order-lg-2 order-1">
             <img
@@ -130,7 +125,6 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
@@ -138,7 +132,11 @@
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
+            <div
+              class="portfolio-item"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal1"
+            >
               <img
                 src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 class="img-fluid mb-3"
@@ -150,14 +148,16 @@
               <p>
                 A JavaScript-based web scraper that extracts data from websites
                 using Node.js, Axios (or Fetch API) for HTTP requests, and
-                Cheerio or Puppeteer for parsing and navigating HTML content. It
-                can be used for price tracking, news aggregation, or data
-                analysis.
+                Cheerio or Puppeteer for parsing and navigating HTML content.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
+            <div
+              class="portfolio-item"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal2"
+            >
               <img
                 src="https://images.pexels.com/photos/3402846/pexels-photo-3402846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 class="img-fluid mb-3"
@@ -169,13 +169,16 @@
               <p>
                 A C-based flight simulation program that models aircraft
                 physics, navigation, and controls. It can include realistic
-                aerodynamics, instrument panel displays, and basic AI for air
-                traffic. Uses libraries like SDL2 or OpenGL for graphics.
+                aerodynamics and instrument panel displays.
               </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="portfolio-item">
+            <div
+              class="portfolio-item"
+              data-bs-toggle="modal"
+              data-bs-target="#projectModal3"
+            >
               <img
                 src="https://images.pexels.com/photos/25626449/pexels-photo-25626449/free-photo-of-a-black-and-white-diagram.jpeg?auto=compress&cs=tinysrgb&w=400"
                 class="img-fluid mb-3"
@@ -186,15 +189,307 @@
               <h3>Path finder</h3>
               <p>
                 An algorithm-based program that finds the shortest or most
-                efficient route between points on a grid or graph. Common
-                algorithms include Dijkstra's Algorithm, A* (A-star), and
-                BFS/DFS. Used in game AI, robotics, and navigation systems.
+                efficient route between points on a grid or graph using
+                Dijkstra's Algorithm, A* (A-star), and BFS/DFS.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Project Modals - Place before closing body tag -->
+    <!-- Modal 1 - Web Scraper -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-primary text-white">
+            <h2 class="modal-title">Web Scraper Project</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="sticky-top pt-3">
+                  <div
+                    id="projectCarousel1"
+                    class="carousel slide mb-4"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner rounded-3">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg"
+                          class="d-block w-100"
+                          alt="Web Scraper Screenshot"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg"
+                          class="d-block w-100"
+                          alt="Code Screenshot"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectCarousel1"
+                      data-bs-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectCarousel1"
+                      data-bs-slide="next"
+                    >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3>Web Scraper in JavaScript</h3>
+                <div class="d-flex gap-2 mb-4">
+                  <span class="badge bg-primary">Node.js</span>
+                  <span class="badge bg-info">Puppeteer</span>
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                </div>
+                <p class="lead">
+                  A high-performance web scraping solution that extracts data
+                  from websites efficiently.
+                </p>
+                <h4 class="mt-4">Features</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Multi-page crawling
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Data export to CSV/JSON
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Proxy rotation support
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >CAPTCHA handling
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary me-2">View Live Project</a>
+                  <a href="#" class="btn btn-outline-secondary">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 - Flight Simulator -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-dark text-white">
+            <h2 class="modal-title">Flight Simulator Project</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="sticky-top pt-3">
+                  <div
+                    id="projectCarousel2"
+                    class="carousel slide mb-4"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner rounded-3">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://images.pexels.com/photos/3402846/pexels-photo-3402846.jpeg"
+                          class="d-block w-100"
+                          alt="Flight Simulator Screenshot"
+                          width="640"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://images.pexels.com/photos/726233/pexels-photo-726233.jpeg"
+                          class="d-block w-100"
+                          alt="Cockpit View"
+                          width="640"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectCarousel2"
+                      data-bs-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectCarousel2"
+                      data-bs-slide="next"
+                    >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3>Flight Simulator in C</h3>
+                <div class="d-flex gap-2 mb-4">
+                  <span class="badge bg-danger">C Language</span>
+                  <span class="badge bg-primary">OpenGL</span>
+                  <span class="badge bg-info">SDL2</span>
+                </div>
+                <p class="lead">
+                  A realistic flight simulation program with accurate physics
+                  modeling.
+                </p>
+                <h4 class="mt-4">Features</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >6-DOF flight dynamics
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Procedural terrain generation
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Instrument panel with HUD
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Multiple aircraft models
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary me-2">View Demo</a>
+                  <a href="#" class="btn btn-outline-secondary">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 - Path Finder -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content border-0">
+          <div class="modal-header bg-success text-white">
+            <h2 class="modal-title">Path Finder Project</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="sticky-top pt-3">
+                  <div
+                    id="projectCarousel3"
+                    class="carousel slide mb-4"
+                    data-bs-ride="carousel"
+                  >
+                    <div class="carousel-inner rounded-3">
+                      <div class="carousel-item active">
+                        <img
+                          src="https://images.pexels.com/photos/25626449/pexels-photo-25626449/free-photo-of-a-black-and-white-diagram.jpeg"
+                          class="d-block w-100"
+                          alt="Path Finder Screenshot"
+                        />
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+                          class="d-block w-100"
+                          alt="Algorithm Visualization"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#projectCarousel3"
+                      data-bs-slide="prev"
+                    >
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#projectCarousel3"
+                      data-bs-slide="next"
+                    >
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3>Path Finding Algorithm</h3>
+                <div class="d-flex gap-2 mb-4">
+                  <span class="badge bg-primary">Python</span>
+                  <span class="badge bg-info">Algorithm</span>
+                  <span class="badge bg-warning text-dark">AI</span>
+                </div>
+                <p class="lead">
+                  Visualization of various pathfinding algorithms in action.
+                </p>
+                <h4 class="mt-4">Features</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Dijkstra's Algorithm
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i>A*
+                    (A-Star) Search
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Breadth-First Search
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Interactive grid editor
+                  </li>
+                </ul>
+                <div class="mt-4">
+                  <a href="#" class="btn btn-primary me-2">Try Demo</a>
+                  <a href="#" class="btn btn-outline-secondary">View Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Add this section to your HTML -->
     <section id="contact" class="py-5 bg-light">
