@@ -54,7 +54,7 @@ text
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/dns-2140/tugas-4.git
    ```
 2. Open in browser:
 
