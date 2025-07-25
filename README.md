@@ -38,18 +38,6 @@ A responsive personal portfolio website built with Bootstrap 5, showcasing my sk
 - **Hosting**: GitHub Pages (or your hosting platform)
 - **Design**: Mobile-first responsive approach
 
-## Project Structure
-
-your-repo/
-├── index.html # Main website file
-├── styles.css # Custom styles
-├── README.md # This documentation file
-└── assets/ # Optional assets folder
-├── images/ # Local images
-└── fonts/ # Custom fonts (if any)
-
-text
-
 ## How to Use
 
 1. **Clone the repository**:
