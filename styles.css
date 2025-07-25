@@ -156,3 +156,31 @@ ul li:hover {
 .dark-carousel .carousel-control-next:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
+/* FORM */
+/* Custom form styling */
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #0d6efd !important;
+  background-color: #f8f9fa !important;
+}
+
+/* Floating label focus state */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: #0d6efd;
+  transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem);
+}
+
+/* Social icons hover effect */
+.bi-linkedin:hover {
+  color: #0a66c2 !important;
+}
+.bi-github:hover {
+  color: #6e5494 !important;
+}
+.bi-twitter-x:hover {
+  color: #000 !important;
+}
