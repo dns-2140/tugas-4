@@ -101,3 +101,58 @@ ul li:hover {
     margin-top: 2rem;
   }
 }
+
+/* Custom carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 6%;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  border-radius: 50%; /* Circular buttons */
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1 !important; /* Force visibility */
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+/* Arrow icon styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Change arrow color to white */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Hover effects */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker on hover */
+}
+
+/* For dark backgrounds - alternative color scheme */
+.dark-carousel .carousel-control-prev,
+.dark-carousel .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dark-carousel .carousel-control-prev:hover,
+.dark-carousel .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
